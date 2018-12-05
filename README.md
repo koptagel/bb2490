@@ -20,3 +20,18 @@ http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD005410
 
 ### Paper & Supplementary Information
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5495806/
+
+### .ms2 Dataset
+https://drive.google.com/drive/u/0/folders/19nV1IcLbF2HDbYcscpVA_p7V801NOyup
+
+### Crux 
+#### Installation
+http://crux.ms/tutorials/install.html
+#### How to run?
+http://crux.ms/tutorials/search.html
+#### Label information (TMT 6-plex, TMT 10-plex)
+http://crux.ms/faq.html
+
+https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0015866_2162600_TMT_MassTagging_UG.pdf (TMT 10-plex, page 6)
+
+http://www.biotech.cornell.edu/sites/default/files/uploads/Documents/Proteomics_protocols/Protocol%2017_TMT%20labeling.pdf (TMT 6-plex, page 9)
