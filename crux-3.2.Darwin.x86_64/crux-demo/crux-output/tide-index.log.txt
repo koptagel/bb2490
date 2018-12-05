@@ -1,0 +1,21 @@
+INFO: CPU: 130-229-13-114-dhcp.wlan.ki.se
+INFO: Crux version: 3.2-0bf523f2
+INFO: Wed Dec  5 15:44:40 CET 2018
+COMMAND LINE: crux tide-index ref.fasta ref-index
+INFO: Beginning tide-index.
+INFO: Running tide-index...
+INFO: Writing results to output directory 'ref-index'.
+INFO: Reading ref.fasta and computing unmodified peptides...
+INFO: Ignoring 1 peptide sequences containing unrecognized characters.
+INFO: Generated 60862 targets, including duplicates.
+INFO: Failed to generate decoys for 7 low complexity peptides.
+INFO: Generated 25484 decoys.
+INFO: Writing decoy fasta...
+INFO: Generating 1 decoy per target
+INFO: Reading proteins
+INFO: Skipped 35371 duplicate targets and 3 duplicate decoys.
+INFO: Wrote 25491 targets and 25481 decoys.
+INFO: Precomputing theoretical spectra...
+INFO: Elapsed time: 0.718 s
+INFO: Finished crux tide-index.
+INFO: Return Code:0

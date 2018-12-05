@@ -1,0 +1,30 @@
+########### SETUP (don't forget to change the folder information)
+
+cd Desktop/crux-3.2.Darwin.x86_64/bin/
+
+echo $PATH
+export PATH=$PATH:/Users/koptagel/Desktop/crux-3.2.Darwin.x86_64/bin/  (you need to run this every time you close the terminal, i guess)
+echo $PATH
+
+crux comet 
+
+########## RUN
+cd ..
+mkdir crux-demo
+cd crux-demo/
+
+(copy data.ms2 and ref.fasta files in this folder)
+
+########### 
+
+crux tide-index ref.fasta ref-index
+
+crux tide-search --compute-sp T data.ms2 ref-index
+
+crux sort-by-column --column-type real --ascending T crux-output/tide-search.target.txt "xcorr score" > crux-output/tide-search.target.sort.txt 
+
+crux percolator --test-fdr 0.1 crux-output/tide-search.target.txt
+
+crux sort-by-column --column-type real --ascending T crux-output/percolator.target.psms.txt "percolator score" > crux-output/percolator.target.psms.sort.txt 
+
+###########

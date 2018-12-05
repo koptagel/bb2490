@@ -1,0 +1,34 @@
+INFO: CPU: 130-229-13-114-dhcp.wlan.ki.se
+INFO: Crux version: 3.2-0bf523f2
+INFO: Wed Dec  5 15:44:55 CET 2018
+COMMAND LINE: crux tide-search --compute-sp T data.ms2 ref-index
+INFO: Beginning tide-search.
+INFO: Running tide-search...
+INFO: Number of Threads: 4
+INFO: Reading index ref-index
+INFO: Read 1772 target proteins
+INFO: Converting data.ms2 to spectrumrecords format
+INFO: Elapsed time starting conversion: 0.0425 s
+INFO: Reading spectrum file crux-output/data.ms2.spectrumrecords.tmp.
+INFO: Read 7910 spectra.
+INFO: Starting search.
+INFO: 1000 spectrum-charge combinations searched, 13% complete
+INFO: 2000 spectrum-charge combinations searched, 25% complete
+INFO: 3000 spectrum-charge combinations searched, 38% complete
+INFO: 4000 spectrum-charge combinations searched, 51% complete
+INFO: 5000 spectrum-charge combinations searched, 63% complete
+INFO: 6000 spectrum-charge combinations searched, 76% complete
+INFO: 7000 spectrum-charge combinations searched, 88% complete
+INFO: [Thread 0]: Deleted 0 precursor, 0 isotope and 7788 out-of-range peaks.
+INFO: [Thread 0]: Retained 99.7597% of peaks.
+INFO: [Thread 3]: Deleted 0 precursor, 0 isotope and 7789 out-of-range peaks.
+INFO: [Thread 3]: Retained 99.7612% of peaks.
+INFO: [Thread 2]: Deleted 0 precursor, 0 isotope and 7913 out-of-range peaks.
+INFO: [Thread 2]: Retained 99.7605% of peaks.
+INFO: [Thread 1]: Deleted 0 precursor, 0 isotope and 7940 out-of-range peaks.
+INFO: [Thread 1]: Retained 99.762% of peaks.
+INFO: Time per spectrum-charge combination: 0.004168 s.
+INFO: Average number of candidates per spectrum-charge combination: 101.849174 
+INFO: Elapsed time: 33 s
+INFO: Finished crux tide-search.
+INFO: Return Code:0
