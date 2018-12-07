@@ -7,7 +7,7 @@ You are to reanalyze a data set from the phosphoproteome study of HeLa cells, pr
 For the project, primarily the phosphoproteomics runs are of interest.
 
 1. To analyze the data, you should first convert your data from raw data to searchable data format like .mgf or .ms2 using msconvert (Proteowizard).
-2. Search the data using crux/percolator or ms-gf+/percolator. In your searches use fix-modifications for carbamidomethylation on cysteine and TMT 10-plex on lysine and N-terminus, and use open modifications for phosphorylations.
+2. Search the data using crux/percolator or ms-gf+/percolator. In your searches use fix-modifications for carbamidomethylation on cysteine and TMT 10-plex on lysine and N-terminus, and use variable modifications of S, T or Y for phosphorylations.
 3. Extract TMT quantities with compomics/reporter. 
 
 * First, try to see how many phospho-sites you can localize.
