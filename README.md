@@ -35,3 +35,5 @@ http://crux.ms/faq.html
 https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0015866_2162600_TMT_MassTagging_UG.pdf (TMT 10-plex, page 6)
 
 http://www.biotech.cornell.edu/sites/default/files/uploads/Documents/Proteomics_protocols/Protocol%2017_TMT%20labeling.pdf (TMT 6-plex, page 9)
+#### S,T,Y variable modifications
+http://crux.ms/commands/tide-index.html (crux/tide-index --mods-spec)
