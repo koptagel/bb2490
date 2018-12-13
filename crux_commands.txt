@@ -28,3 +28,24 @@ crux percolator --test-fdr 0.1 crux-output/tide-search.target.txt
 crux sort-by-column --column-type real --ascending T crux-output/percolator.target.psms.txt "percolator score" > crux-output/percolator.target.psms.sort.txt 
 
 ###########
+
+NEW VERSION
+(don't forget to change the crux path and output directories). 
+
+cd Desktop/bb2490_project/bb2490/
+export PATH=$PATH:/Users/koptagel/Desktop/crux-3.2.Darwin.x86_64/bin/ 
+echo $PATH
+
+crux tide-index data/swissprot_human_can-iso_20170206.fasta results/ref-index --output-dir "results/index_output" --max-mods 4 --mods-spec "1STY+79.966, 1M+15.995, C+57.021, K+229.162932" --nterm-peptide-mods-spec "X+229.162932"
+
+crux tide-search --compute-sp T data/ms2_data/ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01.ms2 results/ref-index --output-dir "results/crux_output_dir"
+
+crux sort-by-column --column-type real --ascending T results/crux_output_dir/tide-search.target.txt "xcorr score" > results/crux_output_dir/tide-search.target.sort.txt 
+
+crux percolator --test-fdr 0.01 results/crux_output_dir/tide-search.target.txt --output-dir "results/crux_output_dir"
+
+crux sort-by-column --column-type real --ascending T results/crux_output_dir/percolator.target.psms.txt "percolator score" > results/crux_output_dir/percolator.target.psms.sort.txt 
+
+
+
+
