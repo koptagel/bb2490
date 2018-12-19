@@ -1,0 +1,23 @@
+INFO: CPU: Hazals-MacBook-Pro.local
+INFO: Crux version: 3.2-0bf523f2
+INFO: Tue Dec 18 09:57:19 CET 2018
+COMMAND LINE: crux tide-index ../data/swissprot_human_can-iso_20170206.fasta ../results/ref-index --output-dir ../results/index_output --max-mods 4 --mods-spec 1STY+79.966, 1M+15.995, C+57.021, K+229.162932 --nterm-peptide-mods-spec X+229.162932
+INFO: Beginning tide-index.
+INFO: Running tide-index...
+INFO: Writing results to output directory '../results/ref-index'.
+INFO: Reading ../data/swissprot_human_can-iso_20170206.fasta and computing unmodified peptides...
+INFO: Ignoring 1 peptide sequences containing unrecognized characters.
+INFO: Generated 60862 targets, including duplicates.
+INFO: Failed to generate decoys for 7 low complexity peptides.
+INFO: Generated 25484 decoys.
+INFO: Writing decoy fasta...
+INFO: Generating 1 decoy per target
+INFO: Reading proteins
+INFO: Skipped 35371 duplicate targets and 3 duplicate decoys.
+INFO: Wrote 25491 targets and 25481 decoys.
+INFO: Computing modified peptides...
+INFO: Created 253355 peptides.
+INFO: Precomputing theoretical spectra...
+INFO: Elapsed time: 1.03 s
+INFO: Finished crux tide-index.
+INFO: Return Code:0

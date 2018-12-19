@@ -114,7 +114,35 @@ def main():
         # Run percolator
         job_name = "percolator"
 
-        cmd = "crux percolator --test-fdr " + str(args.fdr) + " " + in_filename + " --output-dir \"" + out_foldername + "\""
+        cmd = "crux percolator --test-fdr " + str(args.fdr) + " --train-fdr " + str(args.fdr) + " " + in_filename + " --output-dir \"" + out_foldername + "\""
+        print("\n\tRunning ", job_name)
+        print("\t", cmd)
+        start_mini_time = time.time()
+        os.system(cmd)
+        end_mini_time = time.time()
+        print("\tFinished ", job_name)
+        print("\tRuntime: ", end_mini_time-start_mini_time)
+        
+        # Run sort-by-column
+        job_name = "sort-by-column"
+
+        in_filename = out_foldername + "/percolator.target.peptides.txt"
+        out_filename = out_foldername + "/percolator.target.peptides.sort.txt"
+        cmd = "crux sort-by-column --column-type real --ascending T " + in_filename + " \"percolator q-value\" > " + out_filename
+        print("\n\tRunning ", job_name)
+        print("\t", cmd)
+        start_mini_time = time.time()
+        os.system(cmd)
+        end_mini_time = time.time()
+        print("\tFinished ", job_name)
+        print("\tRuntime: ", end_mini_time-start_mini_time)
+        
+        # Run sort-by-column_2
+        job_name = "sort-by-column"
+
+        in_filename = out_foldername + "/percolator.target.peptides.txt"
+        out_filename = "../results/all_results/" + sample_filename + "_percolator.target.peptides.sort.txt"
+        cmd = "crux sort-by-column --column-type real --ascending T " + in_filename + " \"percolator q-value\" > " + out_filename
         print("\n\tRunning ", job_name)
         print("\t", cmd)
         start_mini_time = time.time()
@@ -137,6 +165,21 @@ def main():
         print("\tFinished ", job_name)
         print("\tRuntime: ", end_mini_time-start_mini_time)
 
+        # Run sort-by-column_2
+        job_name = "sort-by-column"
+
+        in_filename = out_foldername + "/percolator.target.psms.txt"
+        out_filename = "../results/all_results/" + sample_filename + "_percolator.target.psms.sort.txt"
+        cmd = "crux sort-by-column --column-type real --ascending T " + in_filename + " \"percolator score\" > " + out_filename
+        print("\n\tRunning ", job_name)
+        print("\t", cmd)
+        start_mini_time = time.time()
+        os.system(cmd)
+        end_mini_time = time.time()
+        print("\tFinished ", job_name)
+        print("\tRuntime: ", end_mini_time-start_mini_time)
+
+        
         end_sample_time = time.time()
         print("\n\tRuntime of sample: ", end_sample_time-start_sample_time)
 
