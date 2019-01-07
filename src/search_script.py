@@ -88,7 +88,8 @@ def main():
         
         #ms2_filename = args.ms_dir + "ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01.ms2"
         #out_foldername = args.out_search_dir + "out_" + "ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01"
-        cmd = "crux tide-search --compute-sp T " + ms2_filename + " " + args.out_ref_index_dir + " " + " --output-dir \"" + out_foldername + "\""
+        #cmd = "crux tide-search --compute-sp T " + ms2_filename + " " + args.out_ref_index_dir + " " + " --output-dir \"" + out_foldername + "\""
+        cmd = "crux tide-search --compute-sp T --precursor-window 10 --precursor-window-type ppm " + ms2_filename + " " + args.out_ref_index_dir + " " + " --output-dir \"" + out_foldername + "\""
         print("\n\tRunning ", job_name)
         print("\t", cmd)
         start_mini_time = time.time()
@@ -156,7 +157,7 @@ def main():
 
         in_filename = out_foldername + "/percolator.target.psms.txt"
         out_filename = out_foldername + "/percolator.target.psms.sort.txt"
-        cmd = "crux sort-by-column --column-type real --ascending T " + in_filename + " \"percolator score\" > " + out_filename
+        cmd = "crux sort-by-column --column-type real --ascending T " + in_filename + " \"percolator q-value\" > " + out_filename
         print("\n\tRunning ", job_name)
         print("\t", cmd)
         start_mini_time = time.time()
@@ -170,7 +171,7 @@ def main():
 
         in_filename = out_foldername + "/percolator.target.psms.txt"
         out_filename = "../results/all_results/" + sample_filename + "_percolator.target.psms.sort.txt"
-        cmd = "crux sort-by-column --column-type real --ascending T " + in_filename + " \"percolator score\" > " + out_filename
+        cmd = "crux sort-by-column --column-type real --ascending T " + in_filename + " \"percolator q-value\" > " + out_filename
         print("\n\tRunning ", job_name)
         print("\t", cmd)
         start_mini_time = time.time()
