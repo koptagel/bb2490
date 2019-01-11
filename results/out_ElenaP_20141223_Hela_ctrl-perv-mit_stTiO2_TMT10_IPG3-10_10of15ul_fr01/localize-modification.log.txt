@@ -1,0 +1,11 @@
+INFO: CPU: 130-229-1-23-dhcp.wlan.ki.se
+INFO: Crux version: 3.2-0bf523f2
+INFO: Tue Jan  8 11:04:33 CET 2019
+COMMAND LINE: crux localize-modification --overwrite T --min-mod-mass 1 ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/tide-search.target.txt --output-dir ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01 --max-mods 4 --mods-spec 1STY+79.966, 1M+15.995, C+57.021, K+229.162932 --nterm-peptide-mods-spec X+229.162932
+INFO: Beginning localize-modification.
+INFO: Parsing ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/tide-search.target.txt...
+INFO: Assigning index 0 to ../data/ms2_data/ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01.ms2.
+INFO: Parsing spectrum file ../data/ms2_data/ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01.ms2
+INFO: Scoring modified peptides (results will be written to localize-modification.target.txt)...
+INFO: 0% complete
+FATAL: Couldn't find mod 0.0 in VariableModTable

@@ -1,0 +1,11 @@
+Scan number: 2570
+Precursor m/z:434.21
+Total Ion Current:3249824.61
+Base Peak Intensity:124522.7
+Number of peaks:4566
+Minimum m/z:99.0
+Maximum m/z:914.2
+Charge state:2
+Neutral mass:866.41
+Charged mass:868.43
+M+H+ mass:867.42

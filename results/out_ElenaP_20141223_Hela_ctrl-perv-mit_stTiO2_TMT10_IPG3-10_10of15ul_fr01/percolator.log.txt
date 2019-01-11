@@ -1,0 +1,80 @@
+INFO: CPU: HazalKMBP.dyn.scilifelab.se
+INFO: Crux version: 3.2-0bf523f2
+INFO: Fri Jan  4 15:32:04 CET 2019
+COMMAND LINE: crux percolator --test-fdr 0.05 --train-fdr 0.05 ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/tide-search.target.txt --output-dir ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01
+INFO: Beginning percolator.
+INFO: Converting input to pin format.
+INFO: Parsing ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/tide-search.target.txt
+INFO: Assigning index 0 to ../data/ms2_data/ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01.ms2.
+INFO: Parsing ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/tide-search.decoy.txt
+INFO: There are 24653 target matches and 24652 decoys
+INFO: Maximum observed charge is 5.
+INFO: File conversion complete.
+INFO: Percolator version 3.02.nightly-4-2a55db2, Build Date Nov  6 2018 12:24:58
+INFO: Copyright (c) 2006-9 University of Washington. All rights reserved.
+INFO: Written by Lukas Käll (lukall@u.washington.edu) in the
+INFO: Department of Genome Sciences at the University of Washington.
+INFO: Issued command:
+INFO: percolator --results-peptides ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/percolator.target.peptides.txt --decoy-results-peptides ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/percolator.decoy.peptides.txt --results-psms ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/percolator.target.psms.txt --decoy-results-psms ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/percolator.decoy.psms.txt --verbose 2 --protein-decoy-pattern decoy_ --seed 1 --subset-max-train 0 --trainFDR 0.05 --testFDR 0.05 --maxiter 10 --search-input auto --no-schema-validation --protein-enzyme trypsin --post-processing-tdc ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/make-pin.pin
+INFO: Started Fri Jan  4 15:32:09 2019
+INFO: Hyperparameters: selectionFdr=0.05, Cpos=0, Cneg=0, maxNiter=10
+INFO: Reading tab-delimited input from datafile ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/make-pin.pin
+INFO: Features:
+INFO: lnrSp deltLCn deltCn XCorr Sp IonFrac PepLen Charge1 Charge2 Charge3 Charge4 Charge5 enzN enzC enzInt lnNumDSP dM absdM 
+INFO: Found 49305 PSMs
+INFO: Separate target and decoy search inputs detected, using target-decoy competition on Percolator scores.
+INFO: Train/test set contains 24653 positives and 24652 negatives, size ratio=1.00004 and pi0=1
+INFO: Selecting Cpos by cross-validation.
+INFO: Selecting Cneg by cross-validation.
+INFO: Split 1:	Selected feature 4 as initial direction. Could separate 194 training set positives with q<0.05 in that direction.
+INFO: Split 2:	Selected feature 4 as initial direction. Could separate 159 training set positives with q<0.05 in that direction.
+INFO: Split 3:	Selected feature 4 as initial direction. Could separate 163 training set positives with q<0.05 in that direction.
+INFO: Found 251 test set positives with q<0.05 in initial direction
+INFO: Reading in data and feature calculation took 2.28445 cpu seconds or 3 seconds wall clock time.
+INFO: ---Training with Cpos selected by cross validation, Cneg selected by cross validation, initial_fdr=0.05, fdr=0.05
+INFO: Iteration 1:	Estimated 291 PSMs with q<0.05
+INFO: Iteration 2:	Estimated 305 PSMs with q<0.05
+INFO: Iteration 3:	Estimated 302 PSMs with q<0.05
+INFO: Iteration 4:	Estimated 301 PSMs with q<0.05
+INFO: Iteration 5:	Estimated 302 PSMs with q<0.05
+INFO: Iteration 6:	Estimated 302 PSMs with q<0.05
+INFO: Iteration 7:	Estimated 302 PSMs with q<0.05
+INFO: Iteration 8:	Estimated 302 PSMs with q<0.05
+INFO: Iteration 9:	Estimated 302 PSMs with q<0.05
+INFO: Iteration 10:	Estimated 302 PSMs with q<0.05
+INFO: Learned normalized SVM weights for the 3 cross-validation splits:
+INFO:  Split1	 Split2	 Split3	FeatureName
+INFO: -0.0370	-0.0070	-0.0946	lnrSp
+INFO: -0.4371	-0.3532	-0.1881	deltLCn
+INFO:  0.1404	 0.0656	 0.0310	deltCn
+INFO:  1.1585	 0.9042	 0.6113	XCorr
+INFO: -0.3387	 0.1116	-0.0667	Sp
+INFO: -0.2777	-0.3004	-0.1627	IonFrac
+INFO: -0.0584	-0.0299	-0.0933	PepLen
+INFO:  0.0000	 0.0000	 0.0000	Charge1
+INFO: -0.0059	 0.0689	 0.0203	Charge2
+INFO: -0.0568	-0.0861	-0.0348	Charge3
+INFO:  0.2201	 0.0405	 0.0468	Charge4
+INFO:  0.0667	 0.0657	 0.0219	Charge5
+INFO:  0.0000	 0.0000	 0.0000	enzN
+INFO:  0.0000	 0.0000	 0.0000	enzC
+INFO:  0.0572	 0.0749	-0.0106	enzInt
+INFO: -0.0033	 0.0576	 0.0305	lnNumDSP
+INFO:  0.1956	 0.2199	 0.0493	dM
+INFO: -0.3094	-0.2978	-0.1824	absdM
+INFO: -3.9112	-3.2638	-2.0688	m0
+INFO: Found 232 test set PSMs with q<0.05.
+INFO: Less identifications (232 vs 251) after percolator processing than before processing
+INFO: Resetting score vector, using default vector. Use --override flag to prevent this.
+INFO: Split 1:	Selected feature 4 as initial direction. Could separate 194 training set positives with q<0.05 in that direction.
+INFO: Split 2:	Selected feature 4 as initial direction. Could separate 159 training set positives with q<0.05 in that direction.
+INFO: Split 3:	Selected feature 4 as initial direction. Could separate 163 training set positives with q<0.05 in that direction.
+INFO: Selected best-scoring PSM per scan+expMass (target-decoy competition): 3371 target PSMs and 3279 decoy PSMs.
+INFO: Tossing out "redundant" PSMs keeping only the best scoring PSM for each unique peptide.
+INFO: Calculating q values.
+INFO: Final list yields 96 target peptides with q<0.05.
+INFO: Calculating posterior error probabilities (PEPs).
+INFO: Processing took 43.07 cpu seconds or 44 seconds wall clock time.
+INFO: Elapsed time: 51.5 s
+INFO: Finished crux percolator.
+INFO: Return Code:0

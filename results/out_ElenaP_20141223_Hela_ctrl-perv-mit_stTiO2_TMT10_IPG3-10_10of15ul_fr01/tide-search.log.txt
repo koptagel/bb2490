@@ -1,0 +1,37 @@
+INFO: CPU: HazalKMBP.dyn.scilifelab.se
+INFO: Crux version: 3.2-0bf523f2
+INFO: Fri Jan  4 15:30:56 CET 2019
+COMMAND LINE: crux tide-search --compute-sp T --precursor-window 10 --precursor-window-type ppm ../data/ms2_data/ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01.ms2 ../results/ref-index --output-dir ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01
+INFO: Beginning tide-search.
+INFO: Running tide-search...
+INFO: Number of Threads: 4
+INFO: Reading index ../results/ref-index
+INFO: Read 1772 target proteins
+INFO: Converting ../data/ms2_data/ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01.ms2 to spectrumrecords format
+INFO: Elapsed time starting conversion: 0.0401 s
+INFO: Reading spectrum file ../results/out_ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01/ElenaP_20141223_Hela_ctrl-perv-mit_stTiO2_TMT10_IPG3-10_10of15ul_fr01.ms2.spectrumrecords.tmp.
+INFO: Read 10256 spectra.
+INFO: Starting search.
+INFO: 1000 spectrum-charge combinations searched, 10% complete
+INFO: 2000 spectrum-charge combinations searched, 20% complete
+INFO: 3000 spectrum-charge combinations searched, 29% complete
+INFO: 4000 spectrum-charge combinations searched, 39% complete
+INFO: 5000 spectrum-charge combinations searched, 49% complete
+INFO: 6000 spectrum-charge combinations searched, 59% complete
+INFO: 7000 spectrum-charge combinations searched, 68% complete
+INFO: 8000 spectrum-charge combinations searched, 78% complete
+INFO: 9000 spectrum-charge combinations searched, 88% complete
+INFO: [Thread 1]: Deleted 0 precursor, 0 isotope and 9248 out-of-range peaks.
+INFO: [Thread 1]: Retained 99.909% of peaks.
+INFO: 10000 spectrum-charge combinations searched, 98% complete
+INFO: [Thread 0]: Deleted 0 precursor, 0 isotope and 9473 out-of-range peaks.
+INFO: [Thread 0]: Retained 99.9071% of peaks.
+INFO: [Thread 3]: Deleted 0 precursor, 0 isotope and 9282 out-of-range peaks.
+INFO: [Thread 3]: Retained 99.9076% of peaks.
+INFO: [Thread 2]: Deleted 0 precursor, 0 isotope and 9153 out-of-range peaks.
+INFO: [Thread 2]: Retained 99.9092% of peaks.
+INFO: Time per spectrum-charge combination: 0.006513 s.
+INFO: Average number of candidates per spectrum-charge combination: 7.087071 
+INFO: Elapsed time: 67 s
+INFO: Finished crux tide-search.
+INFO: Return Code:0
